@@ -36,6 +36,7 @@ header{
     margin:0 0 0 15px;
     font-weight: 700;
     font-size: 3em;
+    letter-spacing: 1em;
 }
 .ul-list{
     display: flex;
@@ -97,4 +98,5 @@ footer{
 .ul-footer li, a{
     list-style: none;
     padding: 25px;
+    letter-spacing: 2px;
 }
