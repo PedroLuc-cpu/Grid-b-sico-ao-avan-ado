@@ -5,15 +5,27 @@
 
 .conteiner-grid{
     display: grid;
+    grid-template-rows: 2fr auto 2fr;
     grid-template-areas: 'logo logo logo '
     'nav main main'
     'footer footer footer';
 }
 
 header{
+   
     grid-area: logo;
 }
 
 .nav-header{
     grid-area: nav;
+}
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+footer{
+    grid-area: footer;
 }
