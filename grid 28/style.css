@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.conteiner-grid{
+    display: grid;
+    grid-template-areas: 'logo logo logo '
+    'nav main main'
+    'footer footer footer';
+}
+
+header{
+    grid-area: logo;
+}
+
+.nav-header{
+    grid-area: nav;
+}
