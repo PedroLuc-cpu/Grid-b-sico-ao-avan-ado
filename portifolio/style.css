@@ -1,3 +1,124 @@
-img{
-    max-width: 100%;
+:root{
+    --font: 'Vollkorn', serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: grid;
+    grid-template-rows:150px 400px 600px 150px;
+}
+
+header{
+    background-color: #750EF5;
+}
+
+.nav-header{
+    display: flex;
+    
+    justify-content:  end;
+    margin-right: 30px;
+}
+.nav-header>ul{
+    display: flex;
+}
+.nav-header ul li+li{
+    margin-left: 30px;
+}
+.nav-header ul>li{
+    list-style-type: none;
+}
+
+.nav-header>ul>li>button{
+    padding: 5px 30px 5px 30px;
+    font-family: var(--font);
+    border-color:transparent;
+    border-radius: 0 0 10px 0px;
+    background-color: #1E1A1A;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+
+.nav-header>ul>li>button:hover{
+    border-bottom-color: aliceblue;
+    transition: .3s;
+}
+
+.wellcome{
+    background-color: #1E1A1A;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.line{
+    border-right: 1px solid rgb(255, 255, 255);
+    font-family: var(--font);
+    font-size: 1.9em;
+    color: white;
+    margin-top: 60px;
+    letter-spacing: 10px;
+    grid-column: 2/3;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.piscar{
+    animation: piscar 500ms infinite normal, type 4s steps(40) 1s normal both ;
+}
+
+@keyframes piscar {
+    from{
+        border-right-color: white;
+    }
+
+    to{
+        border-right-color: transparent ;
+    }
+    
+}
+
+@keyframes type{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 29em;
+    }
+}
+
+.apresent-skill{
+    background-color: #1E1A1A;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.apresent-skill>p{
+    color: white;
+}
+.apresent-skill>{
+    grid-column: 1/1;
+}
+
+.apresent-skill p{
+    text-align: center;
+    font-family: var(--font);
+    font-style: italic;
+    font-size: 1.6em;
+}
+.apresent-skill>article{
+    grid-column: 3/4;
+}
+.skill{
+    margin: ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);    
+}
+footer{
+    background-color: #1E1A1A;
 }
