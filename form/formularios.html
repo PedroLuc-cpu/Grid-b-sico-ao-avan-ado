@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="javascript.js"></script>
+    <title>form</title>
+    <style>
+       body{
+           background-color: black;
+       }
+        form{
+        margin: 0 auto;
+        width: 800px;
+         display: flex;
+         flex-direction: column;
+         row-gap:8px;
+         
+        }
+
+        form>input{
+            padding: 20px;
+            border-color: transparent ;
+            border-radius: 5px;
+            outline-color: transparent;
+            outline-style: none;
+        }
+
+        #submit{
+            background-color: rgb(17, 243, 111);
+        }
+
+        #submit:hover{
+            background-color: rgb(0, 252, 105);
+            transition: .2s;
+        }
+
+        input::placeholder{
+            font-size: 1.1em;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing:2px;
+        }
+
+    </style>
+
+    
+</head>
+<body>
+    <form>
+        <input type="text" name="" id="nome" placeholder="Digite seu nome">
+       <input type="text" name="" id="reaptName" placeholder="Digite seu sobrenome">
+       <input type="email" name="" id="email" placeholder="Digite seu email">
+       <input type="email" name="" id="reaptemail" placeholder="Confirme seu email">
+       <input type="password" name="" id="passoword" placeholder="Crie uma senha">
+       <input type="password" name="" id="reaptpassword" placeholder="Confirme sua senha">
+       <input type="button" value="CADASTRAR" id="submit" onclick="clicar()">
+    </form>
+   
+</body>
+</html>

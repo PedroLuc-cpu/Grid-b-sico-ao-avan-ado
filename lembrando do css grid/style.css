@@ -1,0 +1,34 @@
+    .bola{
+        position: relative;
+       margin: 0 auto;
+       width: 500px;
+       height: 500px;
+       border-top: 10px solid yellow;
+       border-right: 10px solid green;
+       border-bottom: 10px solid blue;
+       border-left: 10px solid whitesmoke;
+       border-radius: 50rem;
+      animation-name:girar;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+
+
+    }
+
+    body{
+        background-color: black;
+    }
+
+
+    @keyframes girar {
+     
+        2%{
+            transform: rotate(0deg);
+
+        }
+
+        to{
+            transform: rotateZ(-360deg);
+        }
+    }
